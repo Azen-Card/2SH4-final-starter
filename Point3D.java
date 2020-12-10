@@ -37,7 +37,7 @@ public class Point3D extends Point {
          super();
              this.z = 0;
     }
-    public Point( int x, int y, int z ) {
+    public Point3D( int x, int y, int z ) {
         setLocation(x,y,z);
     }
     public int getX() {
@@ -51,7 +51,7 @@ public class Point3D extends Point {
     }
     public void setLocation (int a, int b, int c){
         super.setPoint(a,b);
-        this.z = z;
+        this.z = c;
     }
     public double distanceTo(Point that){
         double d = Math.pow(x-that.x,2) + Math.pow(y-that.y,2) + Math.pow(z-that.z,2);
