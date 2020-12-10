@@ -39,17 +39,33 @@ HINT: Sherlock tells you the following information:
 public class DroneSafetyZone
 {
 	public static void main(String[] args) {
-		
-	}
-	
-	
-	public String SafteyAlert(MyCircle[] swarm){
-		
-		
-		
-		
-		
-	}
-	
+        MyCircle[] circ = new MyCircle[100];
+        circ[0] = new MyCircle();
+        DroneSafetyZone droneSafetyZone = new DroneSafetyZone();
+        String answer = droneSafetyZone.SafteyAlert(circ);
+        System.out.println(answer);
+    }
+    
+    public String SafteyAlert(MyCircle[] swarm){
+        for(int i = 0; i < swarm.length; i++){
+            for(int j = 0; j < swarm.length; j++){
+                if(swarm[i] == swarm[j]){
+                    continue;
+                }
+                double sumradii = Math.abs(swarm[i].getRadius() + swarm[j].getRadius());
+                double distance = Math.abs(swarm[i].getCentre().distanceTo(swarm[j].getCentre()));
+
+                if(distance < sumradii){
+                    return "Red";
+                }
+
+                if(distance == sumradii){
+                    return "Yellow";
+                }
+
+            }
+        }
+        return "Green";
+    }
 }
 
