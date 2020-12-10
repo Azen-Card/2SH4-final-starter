@@ -55,61 +55,61 @@ NOTE that this is a code snippet and not a complete java program; hence, you do 
 */
 
 var1.method2();
-//answer:
+//answer: Mammal 2
 
 var2.method2();
-//answer:
+//answer: Horse 2
 
 var3.method2();
-//answer:
+//answer: Ponny 2, Mammal 2
 
 var4.method2();
-//answer:
+//answer: Horse 2
 
 var5.method2();
-//answer:
+//answer: error
 
 var6.method2();
-//answer:
+//answer: Creature 2
 
 var1.method3();
-//answer:
+//answer: Mammal 2, Mammal 3
 
 var2.method3();
-//answer:
+//answer: error
 
 var3.method3();
-//answer:
+//answer: Ponny 2, Mammal 2, Mammal 3
 
 var4.method3();
-//answer:
+//answer: Horse 2, Mammal 3
 
 ((Ponny) var1).method1();
-//answer:
+//answer: error
 
 ((Horse) var2).method1();
-//answer:
+//answer: Horse 1
 
 ((Ponny) var3).method1();
-//answer:
+//answer: Ponny 1
 
 ((Ponny) var4).method1();
-//answer:
+//answer: error
 
 ((Horse) var4).method2();
-//answer:
+//answer: Horse 2
 
 ((Mammal) var5).method2();
-//answer:
+//answer: Mammal 2
 
 ((Creature) var5).method3();
-//answer:
+//answer: error
 
 ((Horse) var2).method3();
-//answer:
+//answer: Horse 2, Mammal 3
 
 ((Ponny) var3).method3();
-//answer:
+//answer: Ponny 2, Mammal 2, Mammal 3
 
 ((Ponny) var5).method3();
-//answer:
+//answer: error
