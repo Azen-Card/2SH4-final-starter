@@ -1,6 +1,11 @@
 public class Point { 
 	protected int x, y; //coordinates
 	
+	private void setPoint(int xInput,int yInput){
+        this.x = xInput;
+        this.y = yInput;
+   	}
+	
 	public Point( int x, int y ) {
 		setPoint( x,y );
 	}
